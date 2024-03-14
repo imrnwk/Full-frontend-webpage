@@ -1,0 +1,2272 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700,400");
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+/* a blue color as a generic focus style */
+button:focus-visible {
+    outline: 2px solid #4a90e2 !important;
+    outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+:root {
+    --primary-color: rgba(35, 166, 240, 1);
+    --secondary-color-1: rgba(35, 133, 109, 1);
+    --secondary-color-2: rgba(60, 64, 61, 1);
+    --dark-background-color: rgba(37, 43, 66, 1);
+    --light-background-color: rgba(255, 255, 255, 1);
+    --success-color: rgba(45, 192, 113, 1);
+    --alert-color: rgba(231, 124, 64, 1);
+    --danger-color: rgba(231, 64, 64, 1);
+    --hover-color: rgba(42, 124, 199, 1);
+    --disabled-element-color: rgba(142, 194, 242, 1);
+    --muted-color: rgba(189, 189, 189, 1);
+    --light-gray-1: rgba(250, 250, 250, 1);
+    --light-gray-2: rgba(236, 236, 236, 1);
+    --primary-text-color: rgba(35, 166, 240, 1);
+    --secondary-text-color-1: rgba(64, 187, 21, 1);
+    --secondary-text-color-2: rgba(60, 64, 61, 1);
+    --text-color: rgba(37, 43, 66, 1);
+    --second-text-color: rgba(115, 115, 115, 1);
+    --light-text-color: rgba(255, 255, 255, 1);
+    --success-text-color: rgba(45, 192, 113, 1);
+    --alert-text-color: rgba(231, 124, 64, 1);
+    --danger-text-color: rgba(231, 64, 64, 1);
+    --hover-text-color: rgba(42, 124, 199, 1);
+    --disabled-element-text-color: rgba(142, 194, 242, 1);
+    --muted-text-color: rgba(189, 189, 189, 1);
+    --light-text-gray-1: rgba(250, 250, 250, 1);
+    --light-text-gray-2: rgba(236, 236, 236, 1);
+    --faded-primary-color: rgba(178, 227, 255, 1);
+    --faded-secondary-color-1: rgba(185, 234, 168, 1);
+    --faded-secondary-color-2: rgba(255, 220, 209, 1);
+    --light-background: rgba(255, 255, 255, 1);
+    --h-0-font-family: "Montserrat-Bold", Helvetica;
+    --h-0-font-weight: 700;
+    --h-0-font-size: 90px;
+    --h-0-letter-spacing: 0.20000000298023224px;
+    --h-0-line-height: 90px;
+    --h-0-font-style: normal;
+    --h-1-font-family: "Montserrat-Bold", Helvetica;
+    --h-1-font-weight: 700;
+    --h-1-font-size: 58px;
+    --h-1-letter-spacing: 0.20000000298023224px;
+    --h-1-line-height: 80px;
+    --h-1-font-style: normal;
+    --h-2-font-family: "Montserrat-Bold", Helvetica;
+    --h-2-font-weight: 700;
+    --h-2-font-size: 40px;
+    --h-2-letter-spacing: 0.20000000298023224px;
+    --h-2-line-height: 50px;
+    --h-2-font-style: normal;
+    --h-3-font-family: "Montserrat-Bold", Helvetica;
+    --h-3-font-weight: 700;
+    --h-3-font-size: 24px;
+    --h-3-letter-spacing: 0.10000000149011612px;
+    --h-3-line-height: 32px;
+    --h-3-font-style: normal;
+    --h-4-font-family: "Montserrat-Regular", Helvetica;
+    --h-4-font-weight: 400;
+    --h-4-font-size: 20px;
+    --h-4-letter-spacing: 0.20000000298023224px;
+    --h-4-line-height: 30px;
+    --h-4-font-style: normal;
+    --h-5-font-family: "Montserrat-Bold", Helvetica;
+    --h-5-font-weight: 700;
+    --h-5-font-size: 16px;
+    --h-5-letter-spacing: 0.10000000149011612px;
+    --h-5-line-height: 24px;
+    --h-5-font-style: normal;
+    --h-6-font-family: "Montserrat-Bold", Helvetica;
+    --h-6-font-weight: 700;
+    --h-6-font-size: 14px;
+    --h-6-letter-spacing: 0.20000000298023224px;
+    --h-6-line-height: 24px;
+    --h-6-font-style: normal;
+    --btn-text-font-family: "Montserrat-Bold", Helvetica;
+    --btn-text-font-weight: 700;
+    --btn-text-font-size: 14px;
+    --btn-text-letter-spacing: 0.20000000298023224px;
+    --btn-text-line-height: 22px;
+    --btn-text-font-style: normal;
+    --mobile-menu-font-family: "Montserrat-Regular", Helvetica;
+    --mobile-menu-font-weight: 400;
+    --mobile-menu-font-size: 30px;
+    --mobile-menu-letter-spacing: 0.20000000298023224px;
+    --mobile-menu-line-height: 45px;
+    --mobile-menu-font-style: normal;
+    --paragraph-font-family: "Montserrat-Regular", Helvetica;
+    --paragraph-font-weight: 400;
+    --paragraph-font-size: 14px;
+    --paragraph-letter-spacing: 0.20000000298023224px;
+    --paragraph-line-height: 20px;
+    --paragraph-font-style: normal;
+    --list-font-family: "Montserrat-Regular", Helvetica;
+    --list-font-weight: 400;
+    --list-font-size: 20px;
+    --list-letter-spacing: 0.20000000298023224px;
+    --list-line-height: 30px;
+    --list-font-style: normal;
+    --link-font-family: "Montserrat-Bold", Helvetica;
+    --link-font-weight: 700;
+    --link-font-size: 14px;
+    --link-letter-spacing: 0.20000000298023224px;
+    --link-line-height: 24px;
+    --link-font-style: normal;
+    --small-font-family: "Montserrat-Regular", Helvetica;
+    --small-font-weight: 400;
+    --small-font-size: 12px;
+    --small-letter-spacing: 0.20000000298023224px;
+    --small-line-height: 16px;
+    --small-font-style: normal;
+    --accentued-drop-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+    --dramatic-shadow: -31px -22px 19px 0px rgba(0, 0, 0, 0.3);
+    --light-drop-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    --text-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.24);
+}
+
+/*navbar dark*/
+
+.navbar-dark {
+    width: 1440px;
+    height: 58px;
+    background-color: var(--dark-background-color);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-dark .collapse-navbar {
+    width: 100%;
+    height: 46px;
+}
+
+.navbar-dark .container {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 10px;
+    position: relative;
+}
+
+.navbar-dark .row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 24px;
+    position: relative;
+}
+
+.navbar-dark .col-md {
+    display: flex;
+    height: 46px;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+
+.navbar-dark .btn-sm {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.navbar-dark .icn-settings {
+    position: relative;
+    width: 16px;
+    height: 16px;
+}
+
+.navbar-dark .h {
+    width: fit-content;
+    font-family: var(--h-6-font-family);
+    font-weight: var(--h-6-font-weight);
+    color: var(--light-text-color);
+    font-size: var(--h-6-font-size);
+    letter-spacing: var(--h-6-letter-spacing);
+    line-height: var(--h-6-line-height);
+    white-space: nowrap;
+    font-style: var(--h-6-font-style);
+}
+
+.navbar-dark .h-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+}
+
+.navbar-dark .div {
+    height: 46px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.navbar-dark .social-media {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    width: 16px;
+    height: 16px;
+}
+
+/*navbar ligth*/
+
+.navbar-light {
+    width: 1440px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    column-gap: 38px;
+    /* padding-left: 38px; */
+    /* padding: 0px 17px 0px 38px; */
+}
+
+.navbar-light .navbar-brand {
+    width: 187px;
+    height: 58px;
+    top: 0;
+    left: 38px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.navbar-light .text-wrapper {
+    top: 12px;
+    left: 0;
+    font-family: var(--h-3-font-family);
+    font-weight: var(--h-3-font-weight);
+    color: var(--text-color);
+    font-size: var(--h-3-font-size);
+    letter-spacing: var(--h-3-letter-spacing);
+    line-height: var(--h-3-line-height);
+    white-space: nowrap;
+    font-style: var(--h-3-font-style);
+}
+
+.navbar-light .collapse-navbar {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-light .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-light .li {
+    width: 43px;
+    height: 24px;
+}
+
+.navbar-light a {
+    height: 24px;
+}
+
+.navbar-light .link {
+    top: -1px;
+    left: 0;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--second-text-color);
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+
+.navbar-light .category {
+    top: -1px;
+    left: 0;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--second-text-color);
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    white-space: nowrap;
+
+}
+
+/*nawber ligth dropdown*/
+
+.navbar-light .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-light .dropdown-toggle {
+    width: 63px;
+    height: 25px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.navbar-light .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: var(--light-background-color);
+    border-color: var(--second-text-color);
+    box-shadow: 0 4px 8px var(--dark-background-color);
+    z-index: 1;
+    width: fit-content;
+    max-height: 100px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    padding-top: 15px;
+    /* overflow: hidden; */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    top: 100%;
+}
+
+.navbar-light .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-light .dropdown-item a {
+    padding: 0px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--second-text-color);
+    display: flex;
+    flex-direction: column;
+    line-height: 15px;
+}
+
+.navbar-light .dropdown-item:hover {
+    background-color: #ffffff;
+}
+
+.navbar-light .vector {
+    width: 10px;
+    height: 6px;
+    top: 10px;
+    left: 53px;
+}
+
+.navbar-light .a-wrapper {
+    width: 45px;
+    height: 24px;
+}
+
+.navbar-light .div-wrapper {
+    width: 33px;
+    height: 24px;
+}
+
+.navbar-light .div {
+    width: 58px;
+    height: 24px;
+}
+
+.navbar-light .li-2 {
+    width: 44px;
+    height: 24px;
+}
+
+.navbar-light .navbar-nav-2 {
+    display: flex;
+    align-items: center;
+    /* top: 2px;
+    left: 832px; */
+    padding-right: 18px;
+}
+
+.navbar-light .li-3 {
+    width: 166px;
+    height: 54px;
+}
+
+.navbar-light .btn-wrapper {
+    height: 54px;
+}
+
+.navbar-light .btn {
+    all: unset;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 15px;
+    border-radius: 37px;
+    overflow: hidden;
+}
+
+.navbar-light .icn-settings {
+    width: 12px;
+    height: 12px;
+}
+
+.navbar-light .text-wrapper-2 {
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--link-font-family);
+    font-weight: var(--link-font-weight);
+    color: var(--primary-color);
+    font-size: var(--link-font-size);
+    text-align: center;
+    letter-spacing: var(--link-letter-spacing);
+    line-height: var(--link-line-height);
+    white-space: nowrap;
+    font-style: var(--link-font-style);
+}
+
+.navbar-light .img {
+    width: 46px;
+    height: 46px;
+}
+
+.navbar-light .li-4 {
+    width: 56px;
+    height: 46px;
+}
+
+.navbar-light .a-2 {
+    height: 46px;
+}
+
+.navbar-light .icn-settings-2 {
+    width: 16px;
+    height: 16px;
+}
+
+.navbar-light .text-wrapper-3 {
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--small-font-family);
+    font-weight: var(--small-font-weight);
+    color: var(--primary-color);
+    font-size: var(--small-font-size);
+    text-align: center;
+    letter-spacing: var(--small-letter-spacing);
+    line-height: var(--small-line-height);
+    white-space: nowrap;
+    font-style: var(--small-font-style);
+}
+
+.ecommerce-desktop {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.ecommerce-desktop .desktop-shop-header {
+    position: relative;
+    width: 1440px;
+    height: 852px;
+    background-color: #ffffff;
+}
+
+
+
+/* .ecommerce-desktop .navbar-style {
+    position: absolute;
+    width: 1439px;
+    height: 136px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+}
+
+.ecommerce-desktop .navbar-dark {
+    position: absolute;
+    width: 1439px;
+    height: 58px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.ecommerce-desktop .navbar-light {
+    position: absolute;
+    width: 1437px;
+    height: 58px;
+    top: 70px;
+    left: 0;
+} */
+
+.ecommerce-desktop .container-fluid {
+    position: absolute;
+    width: 1292px;
+    height: 622px;
+    top: 178px;
+    left: 59px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgb(150, 232.82, 251) 0%, rgb(171, 236, 214) 100%);
+}
+
+.ecommerce-desktop .row {
+    display: flex;
+    width: 1292px;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 0px 206px;
+    position: relative;
+}
+
+.ecommerce-desktop .col-md {
+    width: 548px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    margin-left: -79.5px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.ecommerce-desktop .h {
+    width: fit-content;
+    color: var(--hover-text-color);
+    white-space: nowrap;
+    position: relative;
+    margin-top: -1px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+}
+
+.ecommerce-desktop .headline {
+    position: relative;
+    width: fit-content;
+    font-family: var(--h-1-font-family);
+    font-weight: var(--h-1-font-weight);
+    color: #252b42;
+    font-size: var(--h-1-font-size);
+    letter-spacing: var(--h-1-letter-spacing);
+    line-height: var(--h-1-line-height);
+    white-space: nowrap;
+    font-style: var(--h-1-font-style);
+}
+
+.ecommerce-desktop .text-wrapper {
+    position: relative;
+    width: fit-content;
+    font-family: var(--h-4-font-family);
+    font-weight: var(--h-4-font-weight);
+    color: #727272;
+    font-size: var(--h-4-font-size);
+    letter-spacing: var(--h-4-letter-spacing);
+    line-height: var(--h-4-line-height);
+    font-style: var(--h-4-font-style);
+}
+
+.ecommerce-desktop .cta {
+    all: unset;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .button-btn-primary {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 40px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.ecommerce-desktop .div {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    line-height: 32px;
+    white-space: nowrap;
+}
+
+.ecommerce-desktop .hero-cover-wrapper {
+    position: relative;
+    width: 697px;
+    height: 619px;
+    margin-right: -79.5px;
+}
+
+.ecommerce-desktop .hero-cover {
+    width: 696px;
+    height: 619px;
+    overflow: hidden;
+}
+
+.ecommerce-desktop .none {
+    position: relative;
+    width: 687px;
+    height: 690px;
+    top: -70px;
+    left: 6px;
+}
+
+.ecommerce-desktop .overlap-group {
+    position: relative;
+    width: 696px;
+    height: 631px;
+    top: 58px;
+    left: -5px;
+}
+
+.ecommerce-desktop .ellipse {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 0;
+    left: 128px;
+    background-color: #ffffff;
+    border-radius: 249.94px;
+}
+
+.ecommerce-desktop .ellipse-2 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 12px;
+    left: 68px;
+    background-color: #ffffff;
+    border-radius: 39.96px;
+}
+
+.ecommerce-desktop .technology {
+    position: absolute;
+    width: 696px;
+    height: 619px;
+    top: 12px;
+    left: 0;
+}
+
+.ecommerce-desktop .ellipse-3 {
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    top: 256px;
+    left: 640px;
+    background-color: #ffffff;
+    border-radius: 15.62px;
+}
+
+.ecommerce-desktop .ellipse-4 {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 126px;
+    left: 663px;
+    background-color: #977df4;
+    border-radius: 7.63px;
+}
+
+.ecommerce-desktop .ellipse-5 {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 422px;
+    left: 92px;
+    background-color: #977df4;
+    border-radius: 7.63px;
+}
+
+.ecommerce-desktop .fa-brands-container {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.ecommerce-desktop .brands-1 {
+    width: 153px;
+    height: 34px;
+}
+
+.ecommerce-desktop .brands-2 {
+    width: 146px;
+    height: 59px;
+}
+
+.ecommerce-desktop .brands-3 {
+    width: 152px;
+    height: 75px;
+}
+
+.ecommerce-desktop .brands-4 {
+    width: 151px;
+    height: 42px;
+}
+
+.ecommerce-desktop .brands-5 {
+    width: 151px;
+    height: 62px;
+}
+
+.ecommerce-desktop .brands-6 {
+    width: 151px;
+    height: 72px;
+}
+
+.ecommerce-desktop .desktop-shop-cards {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 732px;
+    background-color: #ffffff;
+}
+
+.ecommerce-desktop .container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 0px;
+    position: relative;
+    left: 87px;
+}
+
+.ecommerce-desktop .row-2 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 15px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .card-item-wrapper {
+    position: relative;
+    width: 612px;
+    height: 572px;
+}
+
+.ecommerce-desktop .card-item {
+    position: relative;
+    width: 611px;
+    height: 572px;
+    left: 1px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.ecommerce-desktop .overlap-group-2 {
+    position: relative;
+    width: 612px;
+    height: 572px;
+    left: -1px;
+}
+
+.ecommerce-desktop .media-bg-cover {
+    position: absolute;
+    width: 611px;
+    height: 572px;
+    top: 0;
+    left: 1px;
+    background-image: url(img/unplash/unsplash_bd.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.ecommerce-desktop .card-content {
+    position: absolute;
+    width: 420px;
+    height: 238px;
+    top: 334px;
+    left: 0;
+    background-color: #2c8bc0bf;
+}
+
+.ecommerce-desktop .p {
+    position: absolute;
+    top: 59px;
+    left: 66px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    line-height: 32px;
+}
+
+.ecommerce-desktop .btn {
+    all: unset;
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 40px;
+    position: absolute;
+    top: 144px;
+    left: 66px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: var(--light-text-color);
+}
+
+.ecommerce-desktop .btn-text {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    color: var(--light-text-color);
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 22px;
+    white-space: nowrap;
+}
+
+.ecommerce-desktop .col-md-2 {
+    position: relative;
+    width: 558px;
+    height: 572px;
+}
+
+.ecommerce-desktop .overlap-group-wrapper {
+    height: 289px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 557px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.ecommerce-desktop .overlap-group-3 {
+    position: relative;
+    width: 558px;
+    height: 289px;
+    left: -1px;
+}
+
+.ecommerce-desktop .media-bg-cover-2 {
+    height: 289px;
+    background-image: url(img/unplash/unsplash_mu.jpg);
+    position: absolute;
+    width: 557px;
+    top: 0;
+    left: 1px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.ecommerce-desktop .card-content-2 {
+    width: 347px;
+    height: 173px;
+    top: 116px;
+    position: absolute;
+    left: 0;
+    background-color: #2c8bc0bf;
+}
+
+.ecommerce-desktop .h-2 {
+    position: absolute;
+    top: 39px;
+    left: 36px;
+    font-family: var(--h-4-font-family);
+    font-weight: var(--h-4-font-weight);
+    color: #ffffff;
+    font-size: var(--h-4-font-size);
+    letter-spacing: var(--h-4-letter-spacing);
+    line-height: var(--h-4-line-height);
+    white-space: nowrap;
+    font-style: var(--h-4-font-style);
+}
+
+.ecommerce-desktop .btn-text-wrapper {
+    all: unset;
+    box-sizing: border-box;
+    top: 92px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 40px;
+    position: absolute;
+    left: 36px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: var(--light-text-color);
+}
+
+.ecommerce-desktop .overlap-wrapper {
+    height: 261px;
+    top: 311px;
+    left: 1px;
+    position: absolute;
+    width: 557px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.ecommerce-desktop .overlap {
+    position: relative;
+    width: 558px;
+    height: 261px;
+    left: -1px;
+}
+
+.ecommerce-desktop .media-bg-cover-3 {
+    height: 261px;
+    background-image: url(img/unplash/unsplash_mk.jpg);
+    position: absolute;
+    width: 557px;
+    top: 0;
+    left: 1px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.ecommerce-desktop .card-content-3 {
+    width: 360px;
+    height: 153px;
+    top: 108px;
+    position: absolute;
+    left: 0;
+    background-color: #2c8bc0bf;
+}
+
+.ecommerce-desktop .h-3 {
+    position: absolute;
+    top: 27px;
+    left: 36px;
+    font-family: var(--h-4-font-family);
+    font-weight: var(--h-4-font-weight);
+    color: #ffffff;
+    font-size: var(--h-4-font-size);
+    letter-spacing: var(--h-4-letter-spacing);
+    line-height: var(--h-4-line-height);
+    white-space: nowrap;
+    font-style: var(--h-4-font-style);
+}
+
+.ecommerce-desktop .div-wrapper {
+    all: unset;
+    box-sizing: border-box;
+    top: 78px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 40px;
+    position: absolute;
+    left: 36px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: var(--light-text-color);
+}
+
+.ecommerce-desktop .desktop-product {
+    position: relative;
+    width: 1440px;
+    height: 1241px;
+    background-color: #ffffff;
+}
+
+.ecommerce-desktop .container-2 {
+    display: flex;
+    flex-direction: column;
+    width: 1124px;
+    align-items: center;
+    gap: 24px;
+    padding: 80px 0px;
+    position: relative;
+    left: 195px;
+}
+
+.ecommerce-desktop .main-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 692px;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .main-content {
+    display: flex;
+    flex-direction: column;
+    width: 691px;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .section-title {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--h-4-font-family);
+    font-weight: var(--h-4-font-weight);
+    color: #727272;
+    font-size: var(--h-4-font-size);
+    text-align: center;
+    letter-spacing: var(--h-4-letter-spacing);
+    line-height: var(--h-4-line-height);
+    white-space: nowrap;
+    font-style: var(--h-4-font-style);
+}
+
+.ecommerce-desktop .h-section-title {
+    position: relative;
+    width: fit-content;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    color: #252b42;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    line-height: 32px;
+    white-space: nowrap;
+}
+
+.ecommerce-desktop .paragraph {
+    width: fit-content;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 400;
+    color: #727272;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+}
+
+.ecommerce-desktop .product-tab-tab-wrapper {
+    display: flex;
+    width: 1115px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .product-tab-tab {
+    display: flex;
+    flex-direction: column;
+    width: 1092px;
+    align-items: flex-start;
+    position: relative;
+}
+
+.ecommerce-desktop .tab-content {
+    display: flex;
+    width: 1092px;
+    gap: 19px;
+    padding: 8px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .tab-one {
+    display: inline-flex;
+    gap: 15px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .row-3 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 30px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .product-card-wrapper {
+    width: 183px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.ecommerce-desktop .product-card {
+    display: flex;
+    flex-direction: column;
+    width: 183px;
+    align-items: flex-start;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+}
+
+.ecommerce-desktop .fixed-height {
+    width: 100%;
+    height: 238px;
+    background-image: url(img/products/product-cover-1.png);
+    position: relative;
+    align-self: stretch;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.ecommerce-desktop .frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 25px 25px 35px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .product-title {
+    position: relative;
+    width: 131px;
+    margin-top: -1px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    color: #252b42;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+}
+
+.ecommerce-desktop .link-product {
+    position: relative;
+    width: fit-content;
+    margin-left: -6.5px;
+    margin-right: -6.5px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    color: #727272;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.ecommerce-desktop .prices {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 5px 3px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .price {
+    width: 52px;
+    color: #bdbdbd;
+    text-align: center;
+    position: relative;
+    margin-top: -1px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+}
+
+.ecommerce-desktop .h-price {
+    position: relative;
+    width: 45px;
+    margin-top: -1px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    color: #23856d;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+}
+
+.ecommerce-desktop .fixed-height-2 {
+    background-image: url(img/products/product-cover-2.png);
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 238px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.ecommerce-desktop .fixed-height-3 {
+    background-image: url(img/products/product-cover-3.png);
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 238px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.ecommerce-desktop .fixed-height-4 {
+    background-image: url(img/products/product-cover-4.png);
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 238px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.ecommerce-desktop .fixed-height-5 {
+    background-image: url(img/products/product-cover-5.png);
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 238px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.ecommerce-desktop .fixed-height-6 {
+    background-image: url(img/products/product-cover-6.png);
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 238px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.ecommerce-desktop .fixed-height-7 {
+    background-image: url(img/products/product-cover-7.png);
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 238px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.ecommerce-desktop .fixed-height-8 {
+    background-image: url(img/products/product-cover-8.png);
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 238px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.ecommerce-desktop .button-md {
+    flex-direction: column;
+    padding: 15px 40px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #23a6f0;
+}
+
+.ecommerce-desktop .btn-text-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--btn-text-font-family);
+    font-weight: var(--btn-text-font-weight);
+    color: #23a6f0;
+    font-size: var(--btn-text-font-size);
+    text-align: center;
+    letter-spacing: var(--btn-text-letter-spacing);
+    line-height: var(--btn-text-line-height);
+    white-space: nowrap;
+    font-style: var(--btn-text-font-style);
+}
+
+.ecommerce-desktop .desktop-content {
+    position: relative;
+    width: 1440px;
+    height: 658px;
+    background-color: #ffffff;
+}
+
+.ecommerce-desktop .row-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1050px;
+    align-items: center;
+    padding: 80px 0px;
+    position: relative;
+    left: 195px;
+}
+
+.ecommerce-desktop .row-4 {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .hero-cover-a-wrapper {
+    display: flex;
+    width: 513px;
+    align-items: flex-start;
+    gap: 30px;
+    position: relative;
+}
+
+.ecommerce-desktop .hero-cover-a {
+    position: relative;
+    width: 512.6px;
+    height: 498px;
+}
+
+.ecommerce-desktop .unsplash-eag {
+    position: absolute;
+    width: 217px;
+    height: 498px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.ecommerce-desktop .unsplash-lksvei-eag {
+    position: absolute;
+    width: 280px;
+    height: 498px;
+    top: 0;
+    left: 233px;
+    object-fit: cover;
+}
+
+.ecommerce-desktop .col-md-3 {
+    width: 447px;
+    align-items: flex-start;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.ecommerce-desktop .section-title-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    color: #23a6f0;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.ecommerce-desktop .section-title-3 {
+    position: relative;
+    width: 431px;
+    font-family: var(--h-2-font-family);
+    font-weight: var(--h-2-font-weight);
+    color: #252b42;
+    font-size: var(--h-2-font-size);
+    letter-spacing: var(--h-2-letter-spacing);
+    line-height: var(--h-2-line-height);
+    font-style: var(--h-2-font-style);
+}
+
+.ecommerce-desktop .paragraph-2 {
+    width: 351px;
+    position: relative;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 400;
+    color: #727272;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+}
+
+.ecommerce-desktop .desktop-features {
+    position: relative;
+    width: 1440px;
+    height: 632px;
+    background-color: #ffffff;
+}
+
+.ecommerce-desktop .container-3 {
+    display: flex;
+    flex-direction: column;
+    width: 1050px;
+    align-items: center;
+    gap: 80px;
+    padding: 80px 0px;
+    position: relative;
+    left: 195px;
+}
+
+.ecommerce-desktop .row-5 {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .card-wrapper {
+    width: 328px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.ecommerce-desktop .card {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 35px 40px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .icon-cool-icon {
+    position: relative;
+    width: 72px;
+    height: 72px;
+}
+
+.ecommerce-desktop .feature-title {
+    position: relative;
+    width: 235px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    color: #252b42;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    line-height: 32px;
+}
+
+.ecommerce-desktop .paragraph-feature {
+    position: relative;
+    width: 225px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 400;
+    color: #727272;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+}
+
+.ecommerce-desktop .paragraph-feature-2 {
+    position: relative;
+    width: 232px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 400;
+    color: #727272;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+}
+
+.ecommerce-desktop .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    width: 329px;
+    align-items: center;
+    position: relative;
+}
+
+.ecommerce-desktop .desktop-blog {
+    position: relative;
+    width: 1440px;
+    height: 744px;
+    background-color: #ffffff;
+}
+
+.ecommerce-desktop .container-4 {
+    display: flex;
+    flex-direction: column;
+    width: 1050px;
+    align-items: center;
+    gap: 96px;
+    padding: 80px 0px;
+    position: relative;
+    left: 195px;
+}
+
+.ecommerce-desktop .row-6 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .main-content-2 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .section-tag {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    color: #23a6f0;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.ecommerce-desktop .section-title-4 {
+    position: relative;
+    width: fit-content;
+    font-family: var(--h-2-font-family);
+    font-weight: var(--h-2-font-weight);
+    color: #252b42;
+    font-size: var(--h-2-font-size);
+    text-align: center;
+    letter-spacing: var(--h-2-letter-spacing);
+    line-height: var(--h-2-line-height);
+    white-space: nowrap;
+    font-style: var(--h-2-font-style);
+}
+
+.ecommerce-desktop .row-7 {
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .horizental-product-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 508px;
+    align-items: center;
+    position: relative;
+}
+
+.ecommerce-desktop .horizental-product {
+    display: inline-flex;
+    align-items: flex-start;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--light-background-color);
+}
+
+.ecommerce-desktop .fixed-width {
+    width: 209px;
+    background-image: url(img/unplash/unsplash_75.png);
+    position: relative;
+    align-self: stretch;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.ecommerce-desktop .product-actions-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    width: 140px;
+    height: 40px;
+    position: absolute;
+    top: 340px;
+    left: 35px;
+}
+
+.ecommerce-desktop .product-actions-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.ecommerce-desktop .product-actions {
+    width: 20px;
+    height: 20px;
+    /* background-color: #ffffff;
+    border-radius: 100%;
+    background-size: 40px; */
+}
+
+.ecommerce-desktop .tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0px 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--danger-color);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: var(--light-drop-shadow);
+}
+
+.ecommerce-desktop .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    color: var(--light-text-color);
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.ecommerce-desktop .frame-2 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 25px 25px 35px;
+    position: relative;
+    align-self: stretch;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .frame-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .div-2 {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .link-product-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--link-font-family);
+    font-weight: var(--link-font-weight);
+    color: var(--primary-text-color);
+    font-size: var(--link-font-size);
+    letter-spacing: var(--link-letter-spacing);
+    line-height: var(--link-line-height);
+    white-space: nowrap;
+    font-style: var(--link-font-style);
+}
+
+.ecommerce-desktop .frame-4 {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--dark-background-color);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.ecommerce-desktop .img {
+    position: relative;
+    width: 16px;
+    height: 16px;
+}
+
+.ecommerce-desktop .small {
+    color: var(--light-text-color);
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--small-font-family);
+    font-weight: var(--small-font-weight);
+    font-size: var(--small-font-size);
+    letter-spacing: var(--small-letter-spacing);
+    line-height: var(--small-line-height);
+    white-space: nowrap;
+    font-style: var(--small-font-style);
+}
+
+.ecommerce-desktop .h-product-title {
+    position: relative;
+    width: 131px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    color: var(--text-color);
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+}
+
+.ecommerce-desktop .paragraph-product {
+    position: relative;
+    width: 242px;
+    font-family: var(--paragraph-font-family);
+    font-weight: var(--paragraph-font-weight);
+    color: #727272;
+    font-size: var(--paragraph-font-size);
+    letter-spacing: var(--paragraph-letter-spacing);
+    line-height: var(--paragraph-line-height);
+    font-style: var(--paragraph-font-style);
+}
+
+.ecommerce-desktop .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    color: #727272;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.ecommerce-desktop .price-2 {
+    width: 52px;
+    color: var(--muted-color);
+    text-align: center;
+    position: relative;
+    margin-top: -1px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+}
+
+.ecommerce-desktop .price-3 {
+    position: relative;
+    width: 45px;
+    margin-top: -1px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    color: var(--secondary-color-1);
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+}
+
+.ecommerce-desktop .product-colors {
+    display: inline-flex;
+    align-items: center;
+    gap: 6.08px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .ellipse-6 {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background-color: #23a6f0;
+    border-radius: 8px;
+}
+
+.ecommerce-desktop .ellipse-7 {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background-color: var(--secondary-color-1);
+    border-radius: 8px;
+}
+
+.ecommerce-desktop .ellipse-8 {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background-color: var(--alert-color);
+    border-radius: 8px;
+}
+
+.ecommerce-desktop .ellipse-9 {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background-color: var(--dark-background-color);
+    border-radius: 8px;
+}
+
+.ecommerce-desktop .frame-5 {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    align-self: stretch;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .frame-6 {
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .icon-akar-icons {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background-image: url(img/icon/icon\ hour.svg);
+    background-size: 100% 100%;
+}
+
+.ecommerce-desktop .small-2 {
+    color: #727272;
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--small-font-family);
+    font-weight: var(--small-font-weight);
+    font-size: var(--small-font-size);
+    letter-spacing: var(--small-letter-spacing);
+    line-height: var(--small-line-height);
+    white-space: nowrap;
+    font-style: var(--small-font-style);
+}
+
+.ecommerce-desktop .icon-ant-design-area {
+    position: relative;
+    width: 16px;
+    height: 14.67px;
+}
+
+.ecommerce-desktop .button-sm {
+    all: unset;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-radius: 37px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #23a6f0;
+}
+
+.ecommerce-desktop .h-4 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    color: #23a6f0;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.ecommerce-desktop .icn-arrow-right-icn {
+    position: relative;
+    width: 9.14px;
+    height: 16px;
+}
+
+.ecommerce-desktop .col-md-5 {
+    display: flex;
+    flex-direction: column;
+    width: 512px;
+    align-items: center;
+    position: relative;
+}
+
+.ecommerce-desktop .fixed-width-2 {
+    position: relative;
+    align-self: stretch;
+    width: 209px;
+    background-image: url(img/unplash/unsplash_ru.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.ecommerce-desktop .desktop-footer {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 488px;
+    background-color: #ffffff;
+}
+
+.ecommerce-desktop .overlap-2 {
+    position: absolute;
+    width: 1440px;
+    height: 142px;
+    top: 0;
+    left: 0;
+}
+
+.ecommerce-desktop .container-wrapper {
+    position: absolute;
+    width: 1440px;
+    height: 142px;
+    top: 0;
+    left: 0;
+    background-color: var(--light-gray-1);
+}
+
+.ecommerce-desktop .container-5 {
+    display: flex;
+    flex-direction: column;
+    width: 1050px;
+    align-items: flex-start;
+    padding: 40px 0px;
+    position: relative;
+    left: 195px;
+}
+
+.ecommerce-desktop .row-8 {
+    display: inline-flex;
+    align-items: center;
+    gap: 577.5px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .navbar-brand-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 236px;
+    position: relative;
+}
+
+.ecommerce-desktop .navbar-brand {
+    position: relative;
+    width: 187px;
+    height: 58px;
+}
+
+.ecommerce-desktop .text-wrapper-4 {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    font-family: var(--h-3-font-family);
+    font-weight: var(--h-3-font-weight);
+    color: #252b42;
+    font-size: var(--h-3-font-size);
+    letter-spacing: var(--h-3-letter-spacing);
+    line-height: var(--h-3-line-height);
+    white-space: nowrap;
+    font-style: var(--h-3-font-style);
+}
+
+.ecommerce-desktop .col-md-6 {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    width: 236px;
+    position: relative;
+}
+
+.ecommerce-desktop .col-md-6-icn{
+    width: 24px;
+    height: 24px;
+}
+
+
+.ecommerce-desktop .line {
+    position: absolute;
+    width: 1057px;
+    height: 1px;
+    top: 137px;
+    left: 195px;
+    object-fit: cover;
+}
+
+.ecommerce-desktop .div-3 {
+    position: absolute;
+    width: 1440px;
+    height: 272px;
+    top: 142px;
+    left: 0;
+    background-color: #ffffff;
+}
+
+.ecommerce-desktop .container-6 {
+    display: flex;
+    flex-direction: column;
+    width: 1050px;
+    align-items: flex-start;
+    padding: 50px 0px;
+    position: relative;
+    left: 195px;
+}
+
+.ecommerce-desktop .col-md-7 {
+    width: 148px;
+    align-items: flex-start;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.ecommerce-desktop .h-5 {
+    width: fit-content;
+    color: #252b42;
+    white-space: nowrap;
+    position: relative;
+    margin-top: -1px;
+    font-family: var(--h-5-font-family);
+    font-weight: var(--h-5-font-weight);
+    font-size: var(--h-5-font-size);
+    letter-spacing: var(--h-5-letter-spacing);
+    line-height: var(--h-5-line-height);
+    font-style: var(--h-5-font-style);
+}
+
+.ecommerce-desktop .div-4 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .link {
+    position: relative;
+    width: fit-content;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    color: #727272;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.ecommerce-desktop .col-md-8 {
+    display: flex;
+    flex-direction: column;
+    width: 152px;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+.ecommerce-desktop .col-md-9 {
+    display: flex;
+    flex-direction: column;
+    width: 321px;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+.ecommerce-desktop .custom-form-group {
+    position: relative;
+    width: 321px;
+    height: 87px;
+}
+
+.ecommerce-desktop .input-group {
+    position: absolute;
+    width: 321px;
+    height: 58px;
+    top: 0;
+    left: 0;
+}
+
+.ecommerce-desktop .overlap-group-4 {
+    position: relative;
+    height: 58px;
+    border-radius: 5px;
+}
+
+.ecommerce-desktop .form-control-input {
+    position: absolute;
+    width: 321px;
+    height: 58px;
+    top: 0;
+    left: 0;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #e6e6e6;
+}
+
+.ecommerce-desktop .text-wrapper-5 {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 400;
+    color: #727272;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+    white-space: nowrap;
+}
+
+.ecommerce-desktop .input-group-append {
+    all: unset;
+    box-sizing: border-box;
+    position: absolute;
+    width: 117px;
+    height: 58px;
+    top: 0;
+    left: 204px;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #E6E6E6;
+    background: var(--primary-color, #23A6F0);
+}
+
+.ecommerce-desktop .input-group-text-wrapper {
+    all: unset;
+    box-sizing: border-box;
+    position: relative;
+    height: 58px;
+    background-color: var(--primary-color);
+    border-radius: 0px 5px 5px 0px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #e6e6e6;
+}
+
+.ecommerce-desktop .input-group-text {
+    position: absolute;
+    top: 14px;
+    left: 22px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+    white-space: nowrap;
+}
+
+.ecommerce-desktop .form-text {
+    position: absolute;
+    top: 58px;
+    left: 2px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 400;
+    color: #727272;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+    white-space: nowrap;
+}
+
+.ecommerce-desktop .div-5 {
+    position: absolute;
+    width: 1440px;
+    height: 74px;
+    top: 414px;
+    left: 0;
+    background-color: #f9f9f9;
+}
+
+.ecommerce-desktop .container-7 {
+    display: flex;
+    flex-direction: column;
+    width: 1050px;
+    align-items: flex-start;
+    padding: 25px 0px;
+    position: relative;
+    left: 195px;
+}
+
+.ecommerce-desktop .col-md-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 213px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.ecommerce-desktop .col-md-10 {
+    width: 600px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
